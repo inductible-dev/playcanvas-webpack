@@ -22,6 +22,8 @@ box.addComponent('model', {
 });
 app.root.addChild(box);
 
+console.log("THIS IS A TEST...");
+
 // create camera entity
 const camera = new pc.Entity('camera');
 camera.addComponent('camera', {
