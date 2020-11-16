@@ -31,7 +31,7 @@ var config = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: 'src/index.html'
+            template: './src/index.html'
         })
     ]
 };
@@ -66,7 +66,7 @@ switch (ENV) {
         console.log("--------------- USING default");
         config.mode = 'development';        
         config.devServer = {
-            contentBase: "./",
+            contentBase: "./static",
         };
         config.devtool = 'source-map';
 }

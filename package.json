@@ -18,9 +18,9 @@
   },
   "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build-debug": "del build-debug/*; NODE_ENV='development' webpack -d --config webpack.conf.js --progress --profile --colors;",
-    "build-release": "del build-release/*; NODE_ENV='production' webpack -p --config webpack.conf.js --progress --profile --colors;",
+    "copy-assets": "copyfiles -u 1 'static/**/*'",
+    "build-debug": "del build-debug/*; NODE_ENV='development' webpack -d --config webpack.conf.js --progress --profile --colors; npm run copy-assets -- 'build-debug'",
+    "build-release": "del build-release/*; NODE_ENV='production' webpack -p --config webpack.conf.js --progress --profile --colors; npm run copy-assets -- 'build-release'",
     "serve": "node node_modules/webpack-dev-server/bin/webpack-dev-server.js --config webpack.conf.js"
   },
   "devDependencies": {
@@ -33,6 +33,7 @@
     "progress": "^2.0.0",
     "serve": "11.3.2",
     "style-loader": "^1.2.1",
+    "copyfiles": "^1.2.0",
     "terser-webpack-plugin": "4.2.3",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.12",

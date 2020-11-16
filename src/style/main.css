@@ -3,9 +3,3 @@ body {
     overflow-y: hidden;
     text-align: center;
 }
-
-#local-game-holder {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-}
