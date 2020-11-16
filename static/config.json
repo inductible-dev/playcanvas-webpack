@@ -91,9 +91,895 @@
     },
     "scenes": [
         {
-            "name": "Boot",
-            "url": "scenes/boot/scene.json"
+            "name": "Explode",
+            "url": "scenes/explode/scene.json"
         }
     ],
-    "assets": {}
+    "assets": {
+        "38155041": {
+            "data": {
+                "addressu": "repeat",
+                "addressv": "repeat",
+                "anisotropy": 4,
+                "magfilter": "linear",
+                "minfilter": "linear_mip_linear",
+                "name": "Crate_DIFF",
+                "rgbm": false,
+                "mipmaps": true
+            },
+            "file": {
+                "size": 150617,
+                "hash": "0595a0b6410c8b4074b2a53c1229198b",
+                "filename": "Crate_DIFF.jpg",
+                "url": "assets/Crate_DIFF.jpg"
+            },
+            "migrated_material": true,
+            "name": "Crate_DIFF",
+            "preload": true,
+            "region": "eu-west-1",
+            "revision": 1,
+            "tags": [],
+            "type": "texture",
+            "i18n": {},
+            "id": "38155041"
+        },
+        "38155042": {
+            "tags": [],
+            "name": "proto_orange.png",
+            "revision": 1,
+            "preload": true,
+            "meta": {
+                "compress": {
+                    "alpha": false,
+                    "dxt": false,
+                    "pvr": false,
+                    "pvrBpp": 4,
+                    "etc1": false,
+                    "normals": false,
+                    "etc2": false,
+                    "basis": false,
+                    "quality": 128
+                },
+                "format": "png",
+                "type": "Palette",
+                "width": 512,
+                "height": 512,
+                "alpha": false,
+                "depth": 8,
+                "srgb": true,
+                "interlaced": false
+            },
+            "data": {
+                "addressu": "repeat",
+                "addressv": "repeat",
+                "minfilter": "linear_mip_linear",
+                "magfilter": "linear",
+                "anisotropy": 1,
+                "rgbm": false,
+                "mipmaps": true
+            },
+            "type": "texture",
+            "file": {
+                "filename": "proto_orange.png",
+                "size": 2913,
+                "hash": "20a355c806d63f9a4a77020fa25eeb41",
+                "variants": {},
+                "url": "assets/proto_orange.png"
+            },
+            "region": "eu-west-1",
+            "i18n": {},
+            "id": "38155042"
+        },
+        "38155043": {
+            "data": {
+                "mapping": [
+                    {
+                        "material": 38155046
+                    }
+                ]
+            },
+            "file": {
+                "filename": "Wooden Crate.json",
+                "hash": "6543a7020575e226d81f283ab9f69ff9",
+                "size": 11036,
+                "url": "assets/Wooden%20Crate.json"
+            },
+            "migrated_material": true,
+            "name": "Wooden Crate",
+            "preload": true,
+            "region": "eu-west-1",
+            "revision": 1,
+            "tags": [],
+            "type": "model",
+            "i18n": {},
+            "id": "38155043"
+        },
+        "38155044": {
+            "tags": [],
+            "name": "proto_gray_n.png",
+            "revision": 1,
+            "preload": true,
+            "meta": {
+                "compress": {
+                    "alpha": false,
+                    "dxt": false,
+                    "pvr": false,
+                    "pvrBpp": 4,
+                    "etc1": false,
+                    "normals": false,
+                    "etc2": false,
+                    "basis": false,
+                    "quality": 128
+                },
+                "format": "png",
+                "type": "TrueColor",
+                "width": 512,
+                "height": 512,
+                "alpha": false,
+                "depth": 8,
+                "srgb": true,
+                "interlaced": false
+            },
+            "data": {
+                "addressu": "repeat",
+                "addressv": "repeat",
+                "minfilter": "linear_mip_linear",
+                "magfilter": "linear",
+                "anisotropy": 1,
+                "rgbm": false,
+                "mipmaps": true
+            },
+            "type": "texture",
+            "file": {
+                "filename": "proto_gray_n.png",
+                "hash": "6982543660517dde76c20dffe8a55b0f",
+                "size": 8012,
+                "variants": {},
+                "url": "assets/proto_gray_n.png"
+            },
+            "region": "eu-west-1",
+            "i18n": {},
+            "id": "38155044"
+        },
+        "38155045": {
+            "tags": [],
+            "name": "proto_blue.png",
+            "revision": 1,
+            "preload": true,
+            "meta": {
+                "compress": {
+                    "alpha": false,
+                    "dxt": false,
+                    "pvr": false,
+                    "pvrBpp": 4,
+                    "etc1": false,
+                    "normals": false,
+                    "etc2": false,
+                    "basis": false,
+                    "quality": 128
+                },
+                "format": "png",
+                "type": "Palette",
+                "width": 512,
+                "height": 512,
+                "alpha": false,
+                "depth": 8,
+                "srgb": true,
+                "interlaced": false
+            },
+            "data": {
+                "addressu": "repeat",
+                "addressv": "repeat",
+                "minfilter": "linear_mip_linear",
+                "magfilter": "linear",
+                "anisotropy": 1,
+                "rgbm": false,
+                "mipmaps": true
+            },
+            "type": "texture",
+            "file": {
+                "filename": "proto_blue.png",
+                "hash": "58fabc3d65bb13169047f2c2f55bc4b3",
+                "size": 2892,
+                "variants": {},
+                "url": "assets/proto_blue.png"
+            },
+            "region": "eu-west-1",
+            "i18n": {},
+            "id": "38155045"
+        },
+        "38155046": {
+            "data": {
+                "ambient": [
+                    0.588,
+                    0.588,
+                    0.588
+                ],
+                "blendType": 3,
+                "cubeMapProjectionBox": {
+                    "center": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "halfExtents": [
+                        0.5,
+                        0.5,
+                        0.5
+                    ]
+                },
+                "diffuseMap": 38155041,
+                "emissive": [
+                    0,
+                    0,
+                    0
+                ],
+                "opacity": 1,
+                "shader": "phong",
+                "shininess": 2,
+                "specular": [
+                    0,
+                    0,
+                    0
+                ]
+            },
+            "file": null,
+            "migrated_material": true,
+            "name": "Wooden Crate",
+            "preload": true,
+            "region": "eu-west-1",
+            "revision": 1,
+            "tags": [],
+            "type": "material",
+            "i18n": {},
+            "id": "38155046"
+        },
+        "38155047": {
+            "tags": [],
+            "name": "floor",
+            "revision": 1,
+            "preload": true,
+            "meta": null,
+            "data": {
+                "shader": "blinn",
+                "ambient": [
+                    0,
+                    0,
+                    0
+                ],
+                "ambientTint": false,
+                "aoMap": null,
+                "aoMapVertexColor": false,
+                "aoMapChannel": "r",
+                "aoMapUv": 0,
+                "aoMapTiling": [
+                    8,
+                    8
+                ],
+                "aoMapOffset": [
+                    0,
+                    0
+                ],
+                "occludeSpecular": 1,
+                "diffuse": [
+                    0.20392156862745098,
+                    0.28627450980392155,
+                    0.3686274509803922
+                ],
+                "diffuseMap": null,
+                "diffuseMapVertexColor": false,
+                "diffuseMapChannel": "rgb",
+                "diffuseMapUv": 0,
+                "diffuseMapTiling": [
+                    8,
+                    8
+                ],
+                "diffuseMapOffset": [
+                    0,
+                    0
+                ],
+                "diffuseMapTint": false,
+                "specular": [
+                    0.23,
+                    0.23,
+                    0.23
+                ],
+                "specularMapVertexColor": false,
+                "specularMapChannel": "rgb",
+                "specularMapUv": 0,
+                "specularMap": null,
+                "specularMapTiling": [
+                    8,
+                    8
+                ],
+                "specularMapOffset": [
+                    0,
+                    0
+                ],
+                "specularMapTint": false,
+                "specularAntialias": true,
+                "useMetalness": false,
+                "metalnessMap": null,
+                "metalnessMapVertexColor": false,
+                "metalnessMapChannel": "r",
+                "metalnessMapUv": 0,
+                "metalnessMapTiling": [
+                    8,
+                    8
+                ],
+                "metalnessMapOffset": [
+                    0,
+                    0
+                ],
+                "metalnessMapTint": false,
+                "metalness": 1,
+                "conserveEnergy": true,
+                "shininess": 32,
+                "glossMap": null,
+                "glossMapVertexColor": false,
+                "glossMapChannel": "r",
+                "glossMapUv": 0,
+                "glossMapTiling": [
+                    8,
+                    8
+                ],
+                "glossMapOffset": [
+                    0,
+                    0
+                ],
+                "fresnelModel": 0,
+                "fresnelFactor": 0,
+                "emissive": [
+                    0,
+                    0,
+                    0
+                ],
+                "emissiveMap": null,
+                "emissiveMapVertexColor": false,
+                "emissiveMapChannel": "rgb",
+                "emissiveMapUv": 0,
+                "emissiveMapTiling": [
+                    8,
+                    8
+                ],
+                "emissiveMapOffset": [
+                    0,
+                    0
+                ],
+                "emissiveMapTint": false,
+                "emissiveIntensity": 1,
+                "normalMap": null,
+                "normalMapTiling": [
+                    8,
+                    8
+                ],
+                "normalMapOffset": [
+                    0,
+                    0
+                ],
+                "normalMapUv": 0,
+                "bumpMapFactor": 1,
+                "heightMap": null,
+                "heightMapChannel": "r",
+                "heightMapUv": 0,
+                "heightMapTiling": [
+                    8,
+                    8
+                ],
+                "heightMapOffset": [
+                    0,
+                    0
+                ],
+                "heightMapFactor": 1,
+                "alphaTest": 0,
+                "opacity": 1,
+                "opacityMap": null,
+                "opacityMapVertexColor": false,
+                "opacityMapChannel": "r",
+                "opacityMapUv": 0,
+                "opacityMapTiling": [
+                    8,
+                    8
+                ],
+                "opacityMapOffset": [
+                    0,
+                    0
+                ],
+                "reflectivity": 1,
+                "refraction": 0,
+                "refractionIndex": 0.6666666666666666,
+                "sphereMap": null,
+                "cubeMap": null,
+                "cubeMapProjection": 0,
+                "cubeMapProjectionBox": {
+                    "center": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "halfExtents": [
+                        0.5,
+                        0.5,
+                        0.5
+                    ]
+                },
+                "lightMap": null,
+                "lightMapVertexColor": false,
+                "lightMapChannel": "rgb",
+                "lightMapUv": 1,
+                "lightMapTiling": [
+                    8,
+                    8
+                ],
+                "lightMapOffset": [
+                    0,
+                    0
+                ],
+                "depthTest": true,
+                "depthWrite": true,
+                "cull": 1,
+                "blendType": 3,
+                "shadowSampleType": 1,
+                "useFog": true,
+                "useLighting": true,
+                "useSkybox": true,
+                "useGammaTonemap": true
+            },
+            "type": "material",
+            "file": null,
+            "region": "eu-west-1",
+            "i18n": {},
+            "id": "38155047"
+        },
+        "38155048": {
+            "tags": [],
+            "name": "orange",
+            "revision": 1,
+            "preload": true,
+            "meta": null,
+            "data": {
+                "shader": "blinn",
+                "ambient": [
+                    0,
+                    0,
+                    0
+                ],
+                "ambientTint": false,
+                "aoMap": null,
+                "aoMapVertexColor": false,
+                "aoMapChannel": "r",
+                "aoMapUv": 0,
+                "aoMapTiling": [
+                    1,
+                    1
+                ],
+                "aoMapOffset": [
+                    0,
+                    0
+                ],
+                "occludeSpecular": 1,
+                "diffuse": [
+                    1,
+                    1,
+                    1
+                ],
+                "diffuseMap": 38155042,
+                "diffuseMapVertexColor": false,
+                "diffuseMapChannel": "rgb",
+                "diffuseMapUv": 0,
+                "diffuseMapTiling": [
+                    1,
+                    1
+                ],
+                "diffuseMapOffset": [
+                    0,
+                    0
+                ],
+                "diffuseMapTint": false,
+                "specular": [
+                    0.23,
+                    0.23,
+                    0.23
+                ],
+                "specularMapVertexColor": false,
+                "specularMapChannel": "rgb",
+                "specularMapUv": 0,
+                "specularMap": null,
+                "specularMapTiling": [
+                    1,
+                    1
+                ],
+                "specularMapOffset": [
+                    0,
+                    0
+                ],
+                "specularMapTint": false,
+                "specularAntialias": true,
+                "useMetalness": false,
+                "metalnessMap": null,
+                "metalnessMapVertexColor": false,
+                "metalnessMapChannel": "r",
+                "metalnessMapUv": 0,
+                "metalnessMapTiling": [
+                    1,
+                    1
+                ],
+                "metalnessMapOffset": [
+                    0,
+                    0
+                ],
+                "metalnessMapTint": false,
+                "metalness": 1,
+                "conserveEnergy": true,
+                "shininess": 32,
+                "glossMap": null,
+                "glossMapVertexColor": false,
+                "glossMapChannel": "r",
+                "glossMapUv": 0,
+                "glossMapTiling": [
+                    1,
+                    1
+                ],
+                "glossMapOffset": [
+                    0,
+                    0
+                ],
+                "fresnelModel": 0,
+                "fresnelFactor": 0,
+                "emissive": [
+                    0,
+                    0,
+                    0
+                ],
+                "emissiveMap": null,
+                "emissiveMapVertexColor": false,
+                "emissiveMapChannel": "rgb",
+                "emissiveMapUv": 0,
+                "emissiveMapTiling": [
+                    1,
+                    1
+                ],
+                "emissiveMapOffset": [
+                    0,
+                    0
+                ],
+                "emissiveMapTint": false,
+                "emissiveIntensity": 1,
+                "normalMap": 38155044,
+                "normalMapTiling": [
+                    1,
+                    1
+                ],
+                "normalMapOffset": [
+                    0,
+                    0
+                ],
+                "normalMapUv": 0,
+                "bumpMapFactor": 1,
+                "heightMap": null,
+                "heightMapChannel": "r",
+                "heightMapUv": 0,
+                "heightMapTiling": [
+                    1,
+                    1
+                ],
+                "heightMapOffset": [
+                    0,
+                    0
+                ],
+                "heightMapFactor": 1,
+                "alphaTest": 0,
+                "opacity": 1,
+                "opacityMap": null,
+                "opacityMapVertexColor": false,
+                "opacityMapChannel": "r",
+                "opacityMapUv": 0,
+                "opacityMapTiling": [
+                    1,
+                    1
+                ],
+                "opacityMapOffset": [
+                    0,
+                    0
+                ],
+                "reflectivity": 1,
+                "refraction": 0,
+                "refractionIndex": 0.6666666666666666,
+                "sphereMap": null,
+                "cubeMap": null,
+                "cubeMapProjection": 0,
+                "cubeMapProjectionBox": {
+                    "center": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "halfExtents": [
+                        0.5,
+                        0.5,
+                        0.5
+                    ]
+                },
+                "lightMap": null,
+                "lightMapVertexColor": false,
+                "lightMapChannel": "rgb",
+                "lightMapUv": 1,
+                "lightMapTiling": [
+                    1,
+                    1
+                ],
+                "lightMapOffset": [
+                    0,
+                    0
+                ],
+                "depthTest": true,
+                "depthWrite": true,
+                "cull": 1,
+                "blendType": 3,
+                "shadowSampleType": 1,
+                "useFog": true,
+                "useLighting": true,
+                "useSkybox": true,
+                "useGammaTonemap": true
+            },
+            "type": "material",
+            "file": null,
+            "region": "eu-west-1",
+            "i18n": {},
+            "id": "38155048"
+        },
+        "26254200": {
+            "tags": [],
+            "name": "sfx-explosion-1.mp3",
+            "revision": 1,
+            "preload": true,
+            "meta": null,
+            "data": null,
+            "type": "audio",
+            "file": {
+                "filename": "sfx-explosion-1.mp3",
+                "size": 77566,
+                "hash": "93a97de5167c44f5d67cf9da6f7ec656",
+                "url": "assets/sfx-explosion-1.mp3"
+            },
+            "region": "eu-west-1",
+            "i18n": {},
+            "id": "26254200"
+        },
+        "26254202": {
+            "data": {
+                "addressu": "repeat",
+                "addressv": "repeat",
+                "minfilter": "linear_mip_linear",
+                "magfilter": "linear",
+                "anisotropy": 1,
+                "rgbm": false,
+                "mipmaps": true
+            },
+            "file": {
+                "filename": "debrisNormal.png",
+                "hash": "938fe9fbe449a26fe66b62c66d293268",
+                "size": 4113,
+                "variants": {},
+                "url": "assets/debrisNormal.png"
+            },
+            "meta": {
+                "compress": {
+                    "alpha": false,
+                    "dxt": false,
+                    "pvr": false,
+                    "pvrBpp": 4,
+                    "etc1": false,
+                    "normals": false,
+                    "etc2": false,
+                    "basis": false,
+                    "quality": 128
+                },
+                "format": "png",
+                "type": "TrueColor",
+                "width": 64,
+                "height": 64,
+                "alpha": false,
+                "depth": 8,
+                "srgb": true,
+                "interlaced": false
+            },
+            "name": "debrisNormal.png",
+            "preload": true,
+            "region": "eu-west-1",
+            "revision": 1,
+            "tags": [],
+            "type": "texture",
+            "i18n": {},
+            "id": "26254202"
+        },
+        "26254203": {
+            "data": {
+                "addressu": "repeat",
+                "addressv": "repeat",
+                "minfilter": "linear_mip_linear",
+                "magfilter": "linear",
+                "anisotropy": 1,
+                "rgbm": false,
+                "mipmaps": true
+            },
+            "file": {
+                "filename": "explode3.png",
+                "hash": "1726e7831296886e2d8aa0a209793bf0",
+                "size": 2894732,
+                "variants": {},
+                "url": "assets/explode3.png"
+            },
+            "meta": {
+                "compress": {
+                    "alpha": false,
+                    "dxt": false,
+                    "pvr": false,
+                    "pvrBpp": 4,
+                    "etc1": false,
+                    "normals": false,
+                    "etc2": false,
+                    "basis": false,
+                    "quality": 128
+                },
+                "format": "png",
+                "type": "TrueColor",
+                "width": 2048,
+                "height": 2048,
+                "alpha": false,
+                "depth": 8,
+                "srgb": true,
+                "interlaced": false
+            },
+            "name": "explode3.png",
+            "preload": true,
+            "region": "eu-west-1",
+            "revision": 1,
+            "tags": [],
+            "type": "texture",
+            "i18n": {},
+            "id": "26254203"
+        },
+        "26254205": {
+            "data": {
+                "addressu": "repeat",
+                "addressv": "repeat",
+                "minfilter": "linear_mip_linear",
+                "magfilter": "linear",
+                "anisotropy": 1,
+                "rgbm": false,
+                "mipmaps": true
+            },
+            "file": {
+                "filename": "debris4.png",
+                "hash": "35879f27a7d4615bae86ee0abb4ede46",
+                "size": 7838,
+                "variants": {},
+                "url": "assets/debris4.png"
+            },
+            "meta": {
+                "compress": {
+                    "alpha": false,
+                    "dxt": false,
+                    "pvr": false,
+                    "pvrBpp": 4,
+                    "etc1": false,
+                    "normals": false,
+                    "etc2": false,
+                    "basis": false,
+                    "quality": 128
+                },
+                "format": "png",
+                "type": "TrueColorAlpha",
+                "width": 64,
+                "height": 64,
+                "alpha": true,
+                "depth": 8,
+                "srgb": true,
+                "interlaced": false
+            },
+            "name": "debris4.png",
+            "preload": true,
+            "region": "eu-west-1",
+            "revision": 1,
+            "tags": [],
+            "type": "texture",
+            "i18n": {},
+            "id": "26254205"
+        },
+        "26254207": {
+            "data": {
+                "addressu": "repeat",
+                "addressv": "repeat",
+                "minfilter": "linear_mip_linear",
+                "magfilter": "linear",
+                "anisotropy": 1,
+                "rgbm": false,
+                "mipmaps": true
+            },
+            "file": {
+                "filename": "particleNormal8x8.png",
+                "hash": "9c1239548ae2ef08903edd0208598a59",
+                "size": 3169,
+                "variants": {},
+                "url": "assets/particleNormal8x8.png"
+            },
+            "meta": {
+                "compress": {
+                    "alpha": false,
+                    "dxt": false,
+                    "pvr": false,
+                    "pvrBpp": 4,
+                    "etc1": false,
+                    "normals": false,
+                    "etc2": false,
+                    "basis": false,
+                    "quality": 128
+                },
+                "format": "png",
+                "type": "TrueColor",
+                "width": 256,
+                "height": 256,
+                "alpha": false,
+                "depth": 8,
+                "srgb": true,
+                "interlaced": false
+            },
+            "name": "particleNormal8x8.png",
+            "preload": true,
+            "region": "eu-west-1",
+            "revision": 1,
+            "tags": [],
+            "type": "texture",
+            "i18n": {},
+            "id": "26254207"
+        },
+        "26254208": {
+            "data": {
+                "addressu": "repeat",
+                "addressv": "repeat",
+                "minfilter": "linear_mip_linear",
+                "magfilter": "linear",
+                "anisotropy": 1,
+                "rgbm": false,
+                "mipmaps": true
+            },
+            "file": {
+                "filename": "smoke.png",
+                "hash": "30cf51b4dd0b9e9cb87bf3ce2c8670ec",
+                "size": 3667736,
+                "variants": {},
+                "url": "assets/smoke.png"
+            },
+            "meta": {
+                "compress": {
+                    "alpha": false,
+                    "dxt": false,
+                    "pvr": false,
+                    "pvrBpp": 4,
+                    "etc1": false,
+                    "normals": false,
+                    "etc2": false,
+                    "basis": false,
+                    "quality": 128
+                },
+                "format": "png",
+                "type": "TrueColorAlpha",
+                "width": 2048,
+                "height": 2048,
+                "alpha": true,
+                "depth": 8,
+                "srgb": true,
+                "interlaced": false
+            },
+            "name": "smoke.png",
+            "preload": true,
+            "region": "eu-west-1",
+            "revision": 1,
+            "tags": [],
+            "type": "texture",
+            "i18n": {},
+            "id": "26254208"
+        }
+    }
 }

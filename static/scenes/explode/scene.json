@@ -1,0 +1,982 @@
+{
+    "name": "Main",
+    "created": "2016-11-22T12:32:31.797Z",
+    "settings": {
+        "physics": {
+            "gravity": [
+                0,
+                -9.8,
+                0
+            ]
+        },
+        "render": {
+            "fog_end": 1000,
+            "tonemapping": 0,
+            "skybox": null,
+            "fog_density": 0.01,
+            "gamma_correction": 1,
+            "exposure": 1,
+            "fog_start": 1,
+            "global_ambient": [
+                0.2,
+                0.2,
+                0.2
+            ],
+            "skyboxIntensity": 1,
+            "fog_color": [
+                0,
+                0,
+                0
+            ],
+            "lightmapMode": 1,
+            "fog": "none",
+            "lightmapMaxResolution": 2048,
+            "skyboxMip": 0,
+            "lightmapSizeMultiplier": 16
+        }
+    },
+    "entities": {
+        "bcff3b4c-b0af-11e6-baa4-22000ac481df": {
+            "position": [
+                0,
+                0,
+                3
+            ],
+            "scale": [
+                1,
+                1,
+                1
+            ],
+            "name": "Camera",
+            "parent": "bcff393a-b0af-11e6-baa4-22000ac481df",
+            "resource_id": "bcff3b4c-b0af-11e6-baa4-22000ac481df",
+            "components": {
+                "camera": {
+                    "projection": 0,
+                    "farClip": 1000,
+                    "clearColorBuffer": true,
+                    "priority": 0,
+                    "fov": 45,
+                    "clearDepthBuffer": true,
+                    "frustumCulling": true,
+                    "clearColor": [
+                        0.35294117647058826,
+                        0.35294117647058826,
+                        0.35294117647058826,
+                        1
+                    ],
+                    "enabled": true,
+                    "orthoHeight": 4,
+                    "nearClip": 0.1,
+                    "rect": [
+                        0,
+                        0,
+                        1,
+                        1
+                    ],
+                    "layers": [
+                        0,
+                        1,
+                        2,
+                        3,
+                        4
+                    ]
+                },
+                "audiolistener": {
+                    "enabled": true
+                },
+                "script": {
+                    "enabled": true,
+                    "order": [
+                        "cameraShake"
+                    ],
+                    "scripts": {
+                        "cameraShake": {
+                            "enabled": true,
+                            "attributes": {
+                                "maxShakeDistance": 0.05,
+                                "duration": 1,
+                                "shakeInterval": 0.04
+                            }
+                        }
+                    }
+                }
+            },
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "enabled": true,
+            "children": [],
+            "tags": []
+        },
+        "bcff393a-b0af-11e6-baa4-22000ac481df": {
+            "position": [
+                0,
+                0,
+                0
+            ],
+            "scale": [
+                1,
+                1,
+                1
+            ],
+            "name": "Root",
+            "parent": null,
+            "resource_id": "bcff393a-b0af-11e6-baa4-22000ac481df",
+            "components": {
+                "script": {
+                    "enabled": true,
+                    "order": [
+                        "timer"
+                    ],
+                    "scripts": {
+                        "timer": {
+                            "enabled": true,
+                            "attributes": {
+                                "explosionEntity": "a9eb0880-db8f-4dd6-a662-52c3ab879084"
+                            }
+                        }
+                    }
+                }
+            },
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "enabled": true,
+            "children": [
+                "bcff3b4c-b0af-11e6-baa4-22000ac481df",
+                "a9eb0880-db8f-4dd6-a662-52c3ab879084"
+            ],
+            "tags": []
+        },
+        "a9eb0880-db8f-4dd6-a662-52c3ab879084": {
+            "name": "Explosion",
+            "tags": [],
+            "enabled": true,
+            "resource_id": "a9eb0880-db8f-4dd6-a662-52c3ab879084",
+            "parent": "bcff393a-b0af-11e6-baa4-22000ac481df",
+            "children": [
+                "4c321a73-c21d-4134-b3e5-a66c2237394d",
+                "b8cc4c20-f9de-493e-99ce-b0bb9eee7cff",
+                "b9697630-b215-4031-bad7-e3154b38907d"
+            ],
+            "position": [
+                0,
+                0.078,
+                0
+            ],
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "scale": [
+                1,
+                1,
+                1
+            ],
+            "components": {
+                "particlesystem": {
+                    "enabled": true,
+                    "autoPlay": true,
+                    "numParticles": 3,
+                    "lifetime": 1,
+                    "rate": 0.05,
+                    "rate2": 0.05,
+                    "startAngle": 0,
+                    "startAngle2": 0,
+                    "loop": false,
+                    "preWarm": false,
+                    "lighting": false,
+                    "halfLambert": false,
+                    "intensity": 1,
+                    "depthWrite": false,
+                    "depthSoftening": 0.1,
+                    "sort": 0,
+                    "blendType": 1,
+                    "stretch": 0,
+                    "alignToMotion": false,
+                    "emitterShape": 1,
+                    "emitterExtents": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "emitterRadius": 0.1,
+                    "initialVelocity": 0,
+                    "animTilesX": 8,
+                    "animTilesY": 8,
+                    "animNumFrames": 64,
+                    "animSpeed": 1,
+                    "animLoop": true,
+                    "wrap": false,
+                    "wrapBounds": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "colorMapAsset": 26254203,
+                    "normalMapAsset": null,
+                    "mesh": null,
+                    "localVelocityGraph": {
+                        "type": 1,
+                        "keys": [
+                            [
+                                0,
+                                0
+                            ],
+                            [
+                                0,
+                                0
+                            ],
+                            [
+                                0,
+                                0
+                            ]
+                        ],
+                        "betweenCurves": false
+                    },
+                    "localVelocityGraph2": {
+                        "type": 1,
+                        "keys": [
+                            [
+                                0,
+                                0
+                            ],
+                            [
+                                0,
+                                0
+                            ],
+                            [
+                                0,
+                                0
+                            ]
+                        ]
+                    },
+                    "velocityGraph": {
+                        "type": 1,
+                        "keys": [
+                            [
+                                0,
+                                0
+                            ],
+                            [
+                                0,
+                                0
+                            ],
+                            [
+                                0,
+                                0
+                            ]
+                        ],
+                        "betweenCurves": false
+                    },
+                    "velocityGraph2": {
+                        "type": 1,
+                        "keys": [
+                            [
+                                0,
+                                0
+                            ],
+                            [
+                                0,
+                                0
+                            ],
+                            [
+                                0,
+                                0
+                            ]
+                        ]
+                    },
+                    "rotationSpeedGraph": {
+                        "type": 1,
+                        "keys": [
+                            0,
+                            0
+                        ],
+                        "betweenCurves": false
+                    },
+                    "rotationSpeedGraph2": {
+                        "type": 1,
+                        "keys": [
+                            0,
+                            0
+                        ]
+                    },
+                    "scaleGraph": {
+                        "type": 1,
+                        "keys": [
+                            0,
+                            0.8
+                        ],
+                        "betweenCurves": false
+                    },
+                    "scaleGraph2": {
+                        "type": 1,
+                        "keys": [
+                            0,
+                            0.8
+                        ]
+                    },
+                    "colorGraph": {
+                        "type": 1,
+                        "keys": [
+                            [
+                                0,
+                                1
+                            ],
+                            [
+                                0,
+                                1,
+                                0.958139534883721,
+                                0.69375
+                            ],
+                            [
+                                0,
+                                1,
+                                0.9627906976744186,
+                                0.6
+                            ]
+                        ],
+                        "betweenCurves": false
+                    },
+                    "alphaGraph": {
+                        "type": 1,
+                        "keys": [
+                            0,
+                            1
+                        ],
+                        "betweenCurves": false
+                    },
+                    "alphaGraph2": {
+                        "type": 1,
+                        "keys": [
+                            0,
+                            1
+                        ]
+                    },
+                    "layers": [
+                        0
+                    ],
+                    "emitterRadiusInner": 0,
+                    "emitterExtentsInner": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "orientation": 0,
+                    "particleNormal": [
+                        0,
+                        1,
+                        0
+                    ],
+                    "radialSpeedGraph": {
+                        "type": 1,
+                        "keys": [
+                            0,
+                            0
+                        ],
+                        "betweenCurves": false
+                    },
+                    "radialSpeedGraph2": {
+                        "type": 1,
+                        "keys": [
+                            0,
+                            0
+                        ]
+                    },
+                    "localSpace": false,
+                    "screenSpace": false
+                },
+                "script": {
+                    "enabled": true,
+                    "order": [
+                        "explode"
+                    ],
+                    "scripts": {
+                        "explode": {
+                            "enabled": true,
+                            "attributes": {}
+                        }
+                    }
+                },
+                "sound": {
+                    "enabled": true,
+                    "volume": 1,
+                    "pitch": 1,
+                    "positional": false,
+                    "refDistance": 1,
+                    "maxDistance": 10000,
+                    "rollOffFactor": 1,
+                    "distanceModel": "linear",
+                    "slots": {
+                        "1": {
+                            "name": "vfx",
+                            "loop": false,
+                            "autoPlay": true,
+                            "overlap": true,
+                            "asset": 26254200,
+                            "startTime": 0,
+                            "duration": 0,
+                            "volume": 1,
+                            "pitch": 1
+                        }
+                    }
+                }
+            }
+        },
+        "4c321a73-c21d-4134-b3e5-a66c2237394d": {
+            "name": "ExplosionSmoke",
+            "tags": [],
+            "enabled": true,
+            "resource_id": "4c321a73-c21d-4134-b3e5-a66c2237394d",
+            "parent": "a9eb0880-db8f-4dd6-a662-52c3ab879084",
+            "children": [],
+            "position": [
+                0,
+                0,
+                -0.06602907180786133
+            ],
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "scale": [
+                1,
+                1,
+                1
+            ],
+            "components": {
+                "particlesystem": {
+                    "enabled": true,
+                    "autoPlay": true,
+                    "numParticles": 3,
+                    "lifetime": 1.5,
+                    "rate": 0.05,
+                    "rate2": 0.05,
+                    "startAngle": 0,
+                    "startAngle2": 360,
+                    "loop": false,
+                    "preWarm": false,
+                    "lighting": true,
+                    "halfLambert": true,
+                    "intensity": 0.5,
+                    "depthWrite": false,
+                    "depthSoftening": 0,
+                    "sort": 0,
+                    "blendType": 2,
+                    "stretch": 0,
+                    "alignToMotion": false,
+                    "emitterShape": 1,
+                    "emitterExtents": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "emitterRadius": 0.1,
+                    "initialVelocity": 0,
+                    "animTilesX": 8,
+                    "animTilesY": 8,
+                    "animNumFrames": 64,
+                    "animSpeed": 1,
+                    "animLoop": true,
+                    "wrap": false,
+                    "wrapBounds": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "colorMapAsset": 26254208,
+                    "normalMapAsset": 26254207,
+                    "mesh": null,
+                    "localVelocityGraph": {
+                        "type": 1,
+                        "keys": [
+                            [
+                                0,
+                                0
+                            ],
+                            [
+                                0,
+                                0
+                            ],
+                            [
+                                0,
+                                0
+                            ]
+                        ],
+                        "betweenCurves": false
+                    },
+                    "localVelocityGraph2": {
+                        "type": 1,
+                        "keys": [
+                            [
+                                0,
+                                0
+                            ],
+                            [
+                                0,
+                                0
+                            ],
+                            [
+                                0,
+                                0
+                            ]
+                        ]
+                    },
+                    "velocityGraph": {
+                        "type": 1,
+                        "keys": [
+                            [
+                                0,
+                                0
+                            ],
+                            [
+                                0,
+                                0
+                            ],
+                            [
+                                0,
+                                0
+                            ]
+                        ],
+                        "betweenCurves": false
+                    },
+                    "velocityGraph2": {
+                        "type": 1,
+                        "keys": [
+                            [
+                                0,
+                                0
+                            ],
+                            [
+                                0,
+                                0
+                            ],
+                            [
+                                0,
+                                0
+                            ]
+                        ]
+                    },
+                    "rotationSpeedGraph": {
+                        "type": 1,
+                        "keys": [
+                            0,
+                            0
+                        ],
+                        "betweenCurves": false
+                    },
+                    "rotationSpeedGraph2": {
+                        "type": 1,
+                        "keys": [
+                            0,
+                            0
+                        ]
+                    },
+                    "scaleGraph": {
+                        "type": 1,
+                        "keys": [
+                            0,
+                            0.9375
+                        ],
+                        "betweenCurves": true
+                    },
+                    "scaleGraph2": {
+                        "type": 1,
+                        "keys": [
+                            0,
+                            0.48750000000000004
+                        ]
+                    },
+                    "colorGraph": {
+                        "type": 1,
+                        "keys": [
+                            [
+                                0,
+                                0.48124999999999996
+                            ],
+                            [
+                                0,
+                                0.475
+                            ],
+                            [
+                                0,
+                                0.4625
+                            ]
+                        ],
+                        "betweenCurves": false
+                    },
+                    "alphaGraph": {
+                        "type": 1,
+                        "keys": [
+                            0,
+                            1
+                        ],
+                        "betweenCurves": false
+                    },
+                    "alphaGraph2": {
+                        "type": 1,
+                        "keys": [
+                            0,
+                            1
+                        ]
+                    },
+                    "layers": [
+                        0
+                    ],
+                    "emitterRadiusInner": 0,
+                    "emitterExtentsInner": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "orientation": 0,
+                    "particleNormal": [
+                        0,
+                        1,
+                        0
+                    ],
+                    "radialSpeedGraph": {
+                        "type": 1,
+                        "keys": [
+                            0,
+                            0
+                        ],
+                        "betweenCurves": false
+                    },
+                    "radialSpeedGraph2": {
+                        "type": 1,
+                        "keys": [
+                            0,
+                            0
+                        ]
+                    },
+                    "localSpace": false,
+                    "screenSpace": false
+                }
+            }
+        },
+        "b8cc4c20-f9de-493e-99ce-b0bb9eee7cff": {
+            "name": "ExplosionDebris",
+            "tags": [],
+            "enabled": true,
+            "resource_id": "b8cc4c20-f9de-493e-99ce-b0bb9eee7cff",
+            "parent": "a9eb0880-db8f-4dd6-a662-52c3ab879084",
+            "children": [],
+            "position": [
+                0,
+                0,
+                0.504
+            ],
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "scale": [
+                1,
+                1,
+                1
+            ],
+            "components": {
+                "particlesystem": {
+                    "enabled": true,
+                    "autoPlay": true,
+                    "numParticles": 100,
+                    "lifetime": 1,
+                    "rate": 0,
+                    "rate2": 0.005,
+                    "startAngle": 0,
+                    "startAngle2": 360,
+                    "loop": false,
+                    "preWarm": false,
+                    "lighting": true,
+                    "halfLambert": false,
+                    "intensity": 1,
+                    "depthWrite": false,
+                    "depthSoftening": 0.1,
+                    "sort": 0,
+                    "blendType": 2,
+                    "stretch": 0,
+                    "alignToMotion": false,
+                    "emitterShape": 0,
+                    "emitterExtents": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "emitterRadius": 0,
+                    "initialVelocity": 0,
+                    "animTilesX": 1,
+                    "animTilesY": 1,
+                    "animNumFrames": 1,
+                    "animSpeed": 1,
+                    "animLoop": true,
+                    "wrap": false,
+                    "wrapBounds": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "colorMapAsset": 26254205,
+                    "normalMapAsset": 26254202,
+                    "mesh": null,
+                    "localVelocityGraph": {
+                        "type": 1,
+                        "keys": [
+                            [
+                                0,
+                                0
+                            ],
+                            [
+                                0,
+                                0
+                            ],
+                            [
+                                0,
+                                0
+                            ]
+                        ],
+                        "betweenCurves": false
+                    },
+                    "localVelocityGraph2": {
+                        "type": 1,
+                        "keys": [
+                            [
+                                0,
+                                0
+                            ],
+                            [
+                                0,
+                                0
+                            ],
+                            [
+                                0,
+                                0
+                            ]
+                        ]
+                    },
+                    "velocityGraph": {
+                        "type": 1,
+                        "keys": [
+                            [
+                                0,
+                                -5,
+                                0.99,
+                                -2
+                            ],
+                            [
+                                0,
+                                -6,
+                                1,
+                                -9
+                            ],
+                            [
+                                0,
+                                -5,
+                                0.99,
+                                -2
+                            ]
+                        ],
+                        "betweenCurves": true
+                    },
+                    "velocityGraph2": {
+                        "type": 1,
+                        "keys": [
+                            [
+                                0,
+                                5,
+                                0.99,
+                                2
+                            ],
+                            [
+                                0,
+                                6,
+                                0.99,
+                                -9
+                            ],
+                            [
+                                0,
+                                5,
+                                1,
+                                2
+                            ]
+                        ]
+                    },
+                    "rotationSpeedGraph": {
+                        "type": 1,
+                        "keys": [
+                            0,
+                            0
+                        ],
+                        "betweenCurves": false
+                    },
+                    "rotationSpeedGraph2": {
+                        "type": 1,
+                        "keys": [
+                            0,
+                            0
+                        ]
+                    },
+                    "scaleGraph": {
+                        "type": 1,
+                        "keys": [
+                            0,
+                            0.02
+                        ],
+                        "betweenCurves": true
+                    },
+                    "scaleGraph2": {
+                        "type": 1,
+                        "keys": [
+                            0,
+                            0
+                        ]
+                    },
+                    "colorGraph": {
+                        "type": 1,
+                        "keys": [
+                            [
+                                0,
+                                1
+                            ],
+                            [
+                                0,
+                                1
+                            ],
+                            [
+                                0,
+                                1
+                            ]
+                        ],
+                        "betweenCurves": false
+                    },
+                    "alphaGraph": {
+                        "type": 1,
+                        "keys": [
+                            0,
+                            1
+                        ],
+                        "betweenCurves": false
+                    },
+                    "alphaGraph2": {
+                        "type": 1,
+                        "keys": [
+                            0,
+                            1
+                        ]
+                    },
+                    "layers": [
+                        0
+                    ],
+                    "emitterRadiusInner": 0,
+                    "emitterExtentsInner": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "orientation": 0,
+                    "particleNormal": [
+                        0,
+                        1,
+                        0
+                    ],
+                    "radialSpeedGraph": {
+                        "type": 1,
+                        "keys": [
+                            0,
+                            0
+                        ],
+                        "betweenCurves": false
+                    },
+                    "radialSpeedGraph2": {
+                        "type": 1,
+                        "keys": [
+                            0,
+                            0
+                        ]
+                    },
+                    "localSpace": false,
+                    "screenSpace": false
+                }
+            }
+        },
+        "b9697630-b215-4031-bad7-e3154b38907d": {
+            "name": "PointLight",
+            "tags": [],
+            "enabled": true,
+            "resource_id": "b9697630-b215-4031-bad7-e3154b38907d",
+            "parent": "a9eb0880-db8f-4dd6-a662-52c3ab879084",
+            "children": [],
+            "position": [
+                0,
+                0,
+                0
+            ],
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "scale": [
+                1,
+                1,
+                1
+            ],
+            "components": {
+                "light": {
+                    "enabled": true,
+                    "type": "point",
+                    "isStatic": false,
+                    "bake": false,
+                    "affectDynamic": true,
+                    "color": [
+                        1,
+                        0.6745098039215687,
+                        0.13333333333333333
+                    ],
+                    "intensity": 1,
+                    "castShadows": false,
+                    "shadowType": 0,
+                    "shadowDistance": 16,
+                    "shadowResolution": 256,
+                    "shadowBias": 0.04,
+                    "normalOffsetBias": 0.04,
+                    "vsmBlurMode": 1,
+                    "vsmBlurSize": 11,
+                    "vsmBias": 0.01,
+                    "range": 10,
+                    "falloffMode": 0,
+                    "innerConeAngle": 40,
+                    "outerConeAngle": 45,
+                    "cookieAsset": null,
+                    "cookieIntensity": 1,
+                    "cookieFalloff": true,
+                    "cookieChannel": "rgb",
+                    "cookieAngle": 0,
+                    "cookieOffset": [
+                        0,
+                        0
+                    ],
+                    "cookieScale": [
+                        1,
+                        1
+                    ],
+                    "bakeDir": true,
+                    "affectLightmapped": false,
+                    "shadowUpdateMode": 2,
+                    "layers": [
+                        0
+                    ]
+                }
+            }
+        }
+    },
+    "id": 849093
+}

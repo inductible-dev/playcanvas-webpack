@@ -31,13 +31,15 @@
     "del-cli": "^0.2.1",
     "html-webpack-plugin": "^4.3.0",
     "progress": "^2.0.0",
+    "signals": "^1.0.0",
     "serve": "11.3.2",
     "style-loader": "^1.2.1",
     "copyfiles": "^1.2.0",
     "terser-webpack-plugin": "4.2.3",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.12",
-    "webpack-dev-server": "^3.11.0"
+    "webpack-dev-server": "^3.11.0",
+    "bowser": "^2.11.0"
   },
   "dependencies": {
     "playcanvas": "1.32.1"
