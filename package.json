@@ -20,10 +20,13 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-debug": "del build-debug/*; NODE_ENV='development' webpack -d --config webpack.conf.js --progress --profile --colors;",
-    "build-release": "del build-release/*; NODE_ENV='production' webpack -d --config webpack.conf.js --progress --profile --colors;",
+    "build-release": "del build-release/*; NODE_ENV='production' webpack -p --config webpack.conf.js --progress --profile --colors;",
     "serve": "node node_modules/webpack-dev-server/bin/webpack-dev-server.js --config webpack.conf.js"
   },
   "devDependencies": {
+    "@babel/core": "^7.12.3",
+    "@babel/preset-env": "^7.12.1",
+    "babel-loader": "^8.1.0",
     "css-loader": "^3.6.0",
     "del-cli": "^0.2.1",
     "html-webpack-plugin": "^4.3.0",

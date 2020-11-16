@@ -1,4 +1,5 @@
-import './style.css';
+import './style/reset.css';
+import './style/main.css';
 
 import * as pc from 'playcanvas';
 
@@ -22,7 +23,7 @@ box.addComponent('model', {
 });
 app.root.addChild(box);
 
-console.log("THIS IS A TEST...");
+console.log("THIS IS A TEST... Bleep!");
 
 // create camera entity
 const camera = new pc.Entity('camera');
